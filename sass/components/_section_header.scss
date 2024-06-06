@@ -4,6 +4,7 @@
 	width: 100%;
 	box-shadow: $header-box-shadow;
 	background: $header-background;
+	z-index: 2;
 
 	@media screen and (min-width: $tablet) {
 		height: 172px;

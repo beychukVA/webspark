@@ -1,5 +1,4 @@
 import localeEn from '../air-datepicker/locale/en.js';
-
 let dpMin, dpMax;
 
 dpMin = new AirDatepicker('#date__from', {
