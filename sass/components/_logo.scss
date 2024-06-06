@@ -1,0 +1,11 @@
+.logo {
+	display: block;
+	width: 138px;
+	height: 138px;
+	margin: 6px;
+	z-index: 2;
+
+	@media screen and (min-width: $tablet) {
+		margin: 6px 0px 28px 55px;
+	}
+}

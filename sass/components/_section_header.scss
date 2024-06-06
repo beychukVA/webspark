@@ -1,0 +1,11 @@
+.section-header {
+	position: fixed;
+	height: 325px;
+	width: 100%;
+	box-shadow: $header-box-shadow;
+	background: $header-background;
+
+	@media screen and (min-width: $tablet) {
+		height: 172px;
+	}
+}
