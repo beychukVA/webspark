@@ -7,7 +7,10 @@ body {
 	font-family: Roboto, sans-serif;
 	color: $primary-color;
 	background-color: $primary-background-color;
-	overflow: hidden;
+
+	@media screen and (min-width: $tablet) {
+		overflow: hidden;
+	}
 }
 
 body.modal-open {

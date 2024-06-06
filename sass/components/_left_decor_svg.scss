@@ -2,6 +2,12 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 325px;
+	height: 398px;
+
+	@media screen and (min-width: $tablet) {
+		width: 630px;
+	}
 
 	& .header-overlay {
 		position: absolute;

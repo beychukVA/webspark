@@ -1,7 +1,7 @@
 .section-main {
 	position: relative;
 	z-index: 1;
-	padding-top: 325px;
+	padding-top: 0;
 
 	@media screen and (min-width: $tablet) {
 		padding-top: 172px;
@@ -67,8 +67,12 @@
 			flex-wrap: wrap;
 			margin-left: -8px;
 			margin-bottom: -8px;
-			max-height: 65vh;
+			max-height: 100%;
 			overflow-y: auto;
+
+			@media screen and (min-width: $tablet) {
+				max-height: 60vh;
+			}
 
 			& .image {
 				display: flex;
@@ -156,8 +160,12 @@
 
 		& .gallery.row {
 			flex-direction: column;
-			max-height: 65vh;
+			max-height: 100%;
 			overflow-y: auto;
+
+			@media screen and (min-width: $tablet) {
+				max-height: 60vh;
+			}
 
 			& :not(:last-child) {
 				margin-bottom: 8px;

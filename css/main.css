@@ -9,7 +9,11 @@ body {
   font-family: Roboto, sans-serif;
   color: #000000;
   background-color: #fafafa;
-  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 body.modal-open {
@@ -55,15 +59,16 @@ img {
 }
 
 .section-header {
-  position: fixed;
-  height: 325px;
+  position: relative;
   width: 100%;
+  height: 325px;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12), inset 0 12px 24px 0 rgba(0, 0, 0, 0.12);
   background: rgba(255, 255, 255, 0.67);
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .section-header {
+    position: fixed;
     height: 172px;
   }
 }
@@ -191,7 +196,7 @@ img {
 .section-main {
   position: relative;
   z-index: 1;
-  padding-top: 325px;
+  padding-top: 0;
 }
 @media screen and (min-width: 768px) {
   .section-main {
@@ -245,8 +250,13 @@ img {
   flex-wrap: wrap;
   margin-left: -8px;
   margin-bottom: -8px;
-  max-height: 65vh;
+  max-height: 100%;
   overflow-y: auto;
+}
+@media screen and (min-width: 768px) {
+  .section-main .container .gallery.grid {
+    max-height: 60vh;
+  }
 }
 .section-main .container .gallery.grid .image {
   display: flex;
@@ -323,8 +333,13 @@ img {
 }
 .section-main .container .gallery.row {
   flex-direction: column;
-  max-height: 65vh;
+  max-height: 100%;
   overflow-y: auto;
+}
+@media screen and (min-width: 768px) {
+  .section-main .container .gallery.row {
+    max-height: 60vh;
+  }
 }
 .section-main .container .gallery.row :not(:last-child) {
   margin-bottom: 8px;
@@ -412,6 +427,13 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  width: 325px;
+  height: 398px;
+}
+@media screen and (min-width: 768px) {
+  .left-decor-svg {
+    width: 630px;
+  }
 }
 .left-decor-svg .header-overlay {
   position: absolute;
